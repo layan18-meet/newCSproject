@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/design.css')}}">
+	<title>Think Wisely</title>
+	
+</head>
+<body>
+	<center>
+	<ul class="some">
+  		<li class="some"><a class="active" href="{{url_for('index2')}}" >Home</a></li>
+  		<li class="some"><a class="some" href="{{url_for('about')}}">About</a></li>
+  		<li class="some"><a class="some" href="{{url_for('articles')}}">Articles</a></li>
+  		<div class="dropdown">
+    		<button class="dropbtn">Everything You Need To Know </button>
+    		<div class="dropdown-content">
+      			<a href="{{url_for('antibiotics')}}">Antibiotics</a>
+      			<a href="{{url_for('painkillers')}}">Painkillers</a>
+      			<a href="{{url_for('whychng')}}">Why Change?</a>
+    		</div>
+ 		</div> 
+  		<li class="some"><a class="some" href="{{url_for('personal_stories')}}">Personal Stories</a></li>
+  		<li class="some"><a class="some" href="{{url_for('alternatives')}}">Alternatives</a></li>
+  		<li class="some"><a class="some" href="{{url_for('debate')}}">Debate</a></li>
+	</ul>
+	
+	<div class="hero-image">
+	  <div class="hero-text">
+
+
+
+	  	<center>
+	  	<div><img style="margin-right: 30%; margin-top: -30%;" src="{{url_for('static', filename='logo.png')}}"></div></center> <br><br><br><br><br>
+	    <h1> BE INFORMED. THINK WISELY.</h1>
+	    
+	  </div>
+	</div>
+
+
+
+
+	
+
+
+	<div class="bottom1">
+		
+			<ul class="some"> 
+				<li><a class="bottom" href="mailto:mlayan147@gmail.com"> Contact us </a></li> 
+			</ul>
+		
+	</div>
+	
+</body>
+</html>

@@ -7,34 +7,29 @@
 <body>
 	<ul class="some">
   		<li class="some"><a class="some" href="{{url_for('index')}}" >Home</a></li>
-  		<li class="some"><a class="some" href="{{url_for('about')}}">About</a></li>
-  		<li class="some"><a class="some" href="{{url_for('articles')}}">Articles</a></li>
-  		<div class="dropdown">
-    		<button class="dropbtn">Everything You Need To Know </button>
-    		<div class="dropdown-content">
-      			<a href="{{url_for('antibiotics')}}">Antibiotics</a>
-      			<a href="{{url_for('painkillers')}}">Painkillers</a>
-      			<a href="{{url_for('whychng')}}">Why Change?</a>
-    		</div>
- 		</div> 
-  		<li class="some"><a class="some" href="{{url_for('personal_stories')}}">Personal Stories</a></li>
-  		<li class="some"><a class="some" href="{{url_for('alternatives')}}">Alternatives</a></li>
-  		<li class="some"><a class="some" href="{{url_for('debate')}}">Debate</a></li>
+  		<li class="some"><a class="some" href="{{url_for('about_before')}}">About</a></li>
 	</ul>
 
 
-	<div class=>
-	    
-	    <h1>Sign Up Here</h1>
-	    <form action="{{url_for('signUp')}}" method="POST">
-	  		<h4> Username</h3><br>
-	  		<input type="text" name="username" id="username" placeholder="Username" required/>
-	  		<br>
-	  		<h4> Password</h3><br>
-	  		<input type="password" name="password" id="password" placeholder="Password" required/>
-	  		<br><br>
-	  		<input type="submit" class="button" value="Sign Up">
-	</form>
+	<div>
+		<h3>Sign Up Here</h3>
+	    <form action="/signUp" method="POST">
+	    	<div>
+	  			<label for="Username"> Username: </label>
+	  			<div>
+	  				<input type="text" name="username" id="Username" placeholder="Enter Username" required/>
+	  			</div>
+	  		</div>
+
+	  		<div>
+	  			<label for="Password"> Password: </label>
+	  			<div>
+	  				<input type="password" name="password" id="Password" placeholder="Enter Password" required/>
+	  			</div>
+	  		</div>
+	  		
+	  		<button type="submit"> Sign Up</button>
+		</form>
 	</div>
 
 
