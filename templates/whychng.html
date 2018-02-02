@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Why Change?</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/design.css')}}">
+</head>
+<body style="background-size: cover;">
+	<style type="text/css">
+		h2 {
+			text-align: left;
+		}
+	</style>
+	<ul class="some">
+ 		<li class="some"><a class="some" href="{{url_for('index')}}" >Home</a></li>
+  		<li class="some"><a class="some" href="{{url_for('about')}}">About</a></li>
+  		<li class="some"><a class="some" href="{{url_for('articles')}}">Articles</a></li>
+  		<div class="dropdown">
+    		<button class="dropbtn">Everything You Need To Know </button>
+    		<div class="dropdown-content">
+      			<a href="{{url_for('antibiotics')}}">Antibiotics</a>
+      			<a href="{{url_for('painkillers')}}">Painkillers</a>
+      			<a class="active2" href="{{url_for('whychng')}}">Why Change?</a>
+    		</div>
+ 		</div> 
+  		<li class="some"><a class="some" href="{{url_for('personal_stories')}}">Personal Stories</a></li>
+  		<li class="some"><a class="some" href="{{url_for('alternatives')}}">Alternatives</a></li>
+  		<li class="some"><a class="some" href="{{url_for('debate')}}">Debate</a></li>
+	</ul>
+
+	<div id="mySidenav" class="sidenav">
+ 		<a href="#sq" id="first">Status Quo</a>
+    	<a href="#agendas" id="second">The Agendas</a>
+    	<a href="#change" id="third">Do we want change?</a>
+    	<a href="#risks" id="fourth"> Risks </a>
+    	<a href="#prevents" id="fifth"> Why not change? </a>
+    	<a href="#bs" id="sixth"> Blindspots </a>
+    	<a href="#beliefs" id="seventh"> Our bliefes </a>
+	</div> 
+
+	<div class="info">
+
+		<h1> Why Challenge The Status Quo? </h1>
+
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+		  <!-- Full-width slides/quotes -->
+		  <div class="mySlides">
+		    <q>I would say any behavior that is not the status quo is interpreted as insanity, when, in fact, it might actually be enlightenment. Insanity is sorta in the eye of the beholder. </q>
+		    <p class="author">- Chuck Palahniuk </p>
+		  </div>
+
+		  <div class="mySlides">
+		    <q>The status quo leads to self-destruction.</q>
+		    <p class="author">- Emmanuel Macron</p>
+		  </div>
+
+		  <div class="mySlides">
+		    <q>Any woman who chooses to behave like a full human being should be warned that the armies of the status quo will treat her as something of a dirty joke. That's their natural and first weapon. She will need her sisterhood.</q>
+		    <p class="author">- Gloria Steinem</p>
+		  </div>
+
+		  <div class="mySlides">
+		    <q>If you step out and do what you feel is right... and you're not attacking a person, and you're attacking a process, and you're attacking the status quo... and if somebody wants to hold a grudge against me, that's on them. It's not on me, and I'm going to do what I think is right.</q>
+		    <p class="author">- Ted Yoho</p>
+		  </div>
+
+
+		  <!-- Next/prev buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+
+		<!-- Dots/bullets/indicators -->
+		<div class="dot-container">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		</div>
+
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active3", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active3";
+		}
+		</script>
+		
+
+		<h2 id="sq"> The Status Quo </h2>
+
+			<img src="{{url_for('static', filename='sq.webp')}}">
+
+			<p>
+				People take unnecessary antibiotic/ painkillers unhesitatingly, even though it's better to doubt or research how they actually affect them.
+
+			</p>
+
+
+
+
+		<h2 id="agendas"> The Agendas That Create This Status Quo </h2>
+
+			<p>
+				The pharmaceutical companies do not have a moral perspective towards the issue, and are mostly driven by money.
+			</p>
+
+
+
+
+		<h2 id="change"> Do we want to change this status quo? </h2>
+
+			<p>
+				We relate more to the people who take antibiotics unnecessarily, because they are the ones who are affected by this status quo and are not aware of it. <br><br>
+				So Yes, we want change. People would become healthier; since a lot of diseases are caused by side-effects of antibiotics/ painkillers. Also some of them only help people because they believe so. <div class="tooltip">(Placebo Effect) <span class="tooltiptext">A <bold>placebo</bold> is anything that seems to be a "real" medical treatment -- but isn't. It could be a pill, a shot, or some other type of "fake" treatment. What all placebos have in common is that they do not contain an active substance meant to affect health.</span></div>
+
+			</p>
+		
+
+
+		<h2 id="risks"> The Risks </h2>
+
+			<p>
+				Pharmaceutical companies would start a process of defending themselves in the interest of not losing money, it may include suing those who are trying to change this status quo or ruining their reputation.<br><br>
+				Also, it may be hard for people who are used to take painkillers and antibiotics to stop taking them, since it may have become a routine.
+
+			</p>
+
+
+		<h2 id="prevents"> What Prevents People From Changing This Status Quo? </h2>
+
+			<p>
+				People tend to stay in their comfort zone. Some of them wait for others to do it, or afraid of those who have a <div class="tooltip"> cognitive dissonance <span class="tooltiptext"> <bold> Cognitive dissonance </bold>, the mental conflict that occurs when beliefs or assumptions are contradicted by new information. The unease or tension that the conflict arouses in people is relieved by one of several defensive maneuvers: they reject, explain away, or avoid the new information; persuade themselves...</span></div> related to the topic.  
+
+			</p>
+
+			<img style="height: 400px; width: 450px;" src="{{url_for('static', filename='sq.jpg')}}">
+
+		<h2 id="bs">Blind Spots </h2>
+
+			
+
+			<p>
+				The dangers caused by taking too much antibiotics/ painkillers or unnecessary ones. We're brainwashed to believe everything a doctor tells us and we don't have a bigger vision.
+
+			</p>
+
+
+		<h2 id="beliefs"> What Do We Believe In? </h2>
+
+			<p>
+				We think that awareness should be raised continuously; people get used to ideas as a result of repetition, subsequently they'll gradually adapt to it.<br><br>
+				We believe that antibiotics/ painkillers might be helpful when in need, but taking unnecessary ones or too much of them without <bold> understanding their effect </bold> is harmful and ignorant.
+
+			</p>
+
+
+
+	</div>
+		
+		<br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br>
+
+
+
+
+	<div class="bottom1">
+			<ul class="some"> 
+				<li class="some"><a class="bottom" href="mailto:mlayan147@gmail.com"> Contact us </a></li> 
+			</ul>
+	</div>
+
+</body>
+</html>

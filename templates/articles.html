@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>articles</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/articles.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/design.css')}}">
+</head>
+<body>
+  <ul class="some">
+      <li class="some"><a class="some" href="{{url_for('index')}}" >Home</a></li>
+      <li class="some"><a class="some" href="{{url_for('about')}}">About</a></li>
+      <li class="some"><a class="active" href="{{url_for('articles')}}">Articles</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">Everything You Need To Know </button>
+        <div class="dropdown-content">
+            <a href="{{url_for('antibiotics')}}">Antibiotics</a>
+            <a href="{{url_for('painkillers')}}">Painkillers</a>
+            <a href="{{url_for('whychng')}}">Why Change?</a>
+        </div>
+    </div> 
+      <li class="some"><a class="some" href="{{url_for('personal_stories')}}">Personal Stories</a></li>
+      <li class="some"><a class="some" href="{{url_for('alternatives')}}">Alternatives</a></li>
+      <li class="some"><a class="some" href="{{url_for('debate')}}">Debate</a></li>
+  </ul>
+
+  <h2>ARTICLES</h2>
+  <p style="text-align: center;">Keep up with the newest articles about painkillers/ antibiotics, combined with personal stories..</p>
+  <button class="accordion">The Antibiotic Resistance Crisis</button>
+  <div class="panel">
+    <p>This is the first of two articles about the antibiotic resistance crisis. Part 2 will discuss strategies to manage the crisis and new agents for the treatment of bacterial infections.</p>
+    <h2>INTRODUCTION</h2>
+    <p>The rapid emergence of resistant bacteria is occurring worldwide, endangering the efficacy of antibiotics, which have transformed medicine and saved millions of lives.1–6 Many decades after the first patients were treated with antibiotics, bacterial infections have again become a threat.7 The antibiotic resistance crisis has been attributed to the overuse and misuse of these medications, as well as a lack of new drug development by the pharmaceutical industry due to reduced economic incentives and challenging regulatory requirements.2–5,8–15 The Centers for Disease Control and Prevention (CDC) has classified a number of bacteria as presenting urgent, serious, and concerning threats, many of which are already responsible for placing a substantial clinical and financial burden on the U.S. health care system, patients, and their families.1,5,11,16 Coordinated efforts to implement new policies, renew research efforts, and pursue steps to manage the crisis are greatly needed.2,7</p>
+
+    <h2>History of Antibiotics</h2>
+    <p>The management of microbial infections in ancient Egypt, Greece, and China is well-documented.4 The modern era of antibiotics started with the discovery of penicillin by Sir Alexander Fleming in 1928.4,13 Since then, antibiotics have transformed modern medicine and saved millions of lives.2,5 Antibiotics were first prescribed to treat serious infections in the 1940s.5 Penicillin was successful in controlling bacterial infections among World War II soldiers.4 However, shortly thereafter, penicillin resistance became a substantial clinical problem, so that, by the 1950s, many of the advances of the prior decade were threatened.7 In response, new beta-lactam antibiotics were discovered, developed, and deployed, restoring confidence.4,7 However, the first case of methicillin-resistant Staphylococcus aureus (MRSA) was identified during that same decade, in the United Kingdom in 1962 and in the United States in 1968.4,5</p>
+
+    <p>Unfortunately, resistance has eventually been seen to nearly all antibiotics that have been developed (Figure 1).5 Vancomycin was introduced into clinical practice in 1972 for the treatment of methicillin resistance in both S. aureus and coagulase-negative staphylococci.4,5 It had been so difficult to induce vancomycin resistance that it was believed unlikely to occur in a clinical setting.4 However, cases of vancomycin resistance were reported in coagulase-negative staphylococci in 1979 and 1983.4 From the late 1960s through the early 1980s, the pharmaceutical industry introduced many new antibiotics to solve the resistance problem, but after that the antibiotic pipeline began to dry up and fewer new drugs were introduced.7 As a result, in 2015, many decades after the first patients were treated with antibiotics, bacterial infections have again become a threat.7</p>
+
+    <h2>CAUSES OF THE ANTIBIOTIC RESISTANCE CRISIS</h2>
+    <h4>Overuse</h4>
+    <p>As early as 1945, Sir Alexander Fleming raised the alarm regarding antibiotic overuse when he warned that the “public will demand [the drug and] … then will begin an era … of abuses.” 7,14 The overuse of antibiotics clearly drives the evolution of resistance.5,9 Epidemiological studies have demonstrated a direct relationship between antibiotic consumption and the emergence and dissemination of resistant bacteria strains.10 In bacteria, genes can be inherited from relatives or can be acquired from nonrelatives on mobile genetic elements such as plasmids.9 This horizontal gene transfer (HGT) can allow antibiotic resistance to be transferred among different species of bacteria.9 Resistance can also occur spontaneously through mutation.9 Antibiotics remove drug-sensitive competitors, leaving resistant bacteria behind to reproduce as a result of natural selection.9 Despite warnings regarding overuse, antibiotics are overprescribed worldwide.10</p>
+
+    <p>  In the U.S., the sheer number of antibiotics prescribed indicates that a lot of work must be done to reduce the use of these medications.12 An analysis of the IMS Health Midas database, which estimates antibiotic consumption based on the volume of antibiotics sold in retail and hospital pharmacies, indicated that in 2010, 22.0 standard units (a unit equaling one dose, i.e., one pill, capsule, or ampoule) of antibiotics were prescribed per person in the U.S.17 The number of antibiotic prescriptions varies by state, with the most written in states running from the Great Lakes down to the Gulf Coast, whereas the West Coast has the lowest use (Figure 2).5,12 In some states, the number of prescribed courses of treatment with antibiotics per year exceed the population, amounting to more than one treatment per person per year.12 </p>
+    <p> In many other countries, antibiotics are unregulated and available over the counter without a prescription.10,15 This lack of regulation results in antibiotics that are easily accessible, plentiful, and cheap, which promotes overuse.15 The ability to purchase such products online has also made them accessible in countries where antibiotics are regulated.15  </p>
+
+    <h4>Inappropriate Prescribing</h4>
+    <p> Incorrectly prescribed antibiotics also contribute to the promotion of resistant bacteria.5 Studies have shown that treatment indication, choice of agent, or duration of antibiotic therapy is incorrect in 30% to 50% of cases.5,18 One U.S. study reported that a pathogen was defined in only 7.6% of 17,435 patients hospitalized with community-acquired pneumonia (CAP).14 In comparison, investigators at the Karolinska Institute in Sweden were able to identify the probable pathogen in 89% of patients with CAP through use of molecular diagnostic techniques (polymerase chain reaction [PCR] and semiquantitative PCR).14 In addition, 30% to 60% of the antibiotics prescribed in intensive care units (ICUs) have been found to be unnecessary, inappropriate, or suboptimal.18  </p>
+    <p> Incorrectly prescribed antibiotics have questionable therapeutic benefit and expose patients to potential complications of antibiotic therapy.11 Subinhibitory and subtherapeutic antibiotic concentrations can promote the development of antibiotic resistance by supporting genetic alterations, such as changes in gene expression, HGT, and mutagenesis.8 Changes in antibiotic-induced gene expression can increase virulence, while increased mutagenesis and HGT promote antibiotic resistance and spread.8 Low levels of antibiotics have been shown to contribute to strain diversification in organisms such as Pseudomonas aeruginosa.8 Subinhibitory concentrations of piperacillin and/or tazobactam have also been shown to induce broad proteomic alterations in Bacteroides fragilis.8  </p>
+
+    <h4>Extensive Agricultural Use</h4>
+    <p>  In both the developed and developing world, antibiotics are widely used as growth supplements in livestock.5,10,14 An estimated 80% of antibiotics sold in the U.S. are used in animals, primarily to promote growth and to prevent infection.7,12,14 Treating livestock with antimicrobials is said to improve the overall health of the animals, producing larger yields and a higher-quality product.15 </p>
+    <p> Antibacterial products sold for hygienic or cleaning purposes may also contribute to this problem, since they may limit the development of immunities to environmental antigens in both children and adults.1,15 Consequently, immune-system versatility may be compromised, possibly increasing morbidity and mortality due to infections that wouldn’t normally be virulent.15  </p>
+
+    <h4>Regulatory Barriers</h4>
+    <p>  Even for those companies that are optimistic about pursuing the discovery of new antibiotics, obtaining regulatory approval is often an obstacle.2,13 Between 1983 and 2007, a substantial reduction occurred in the number of new antibiotic approvals.2 Difficulties in pursuing regulatory approval that have been noted include: bureaucracy, absence of clarity, differences in clinical trial requirements among countries, changes in regulatory and licensing rules, and ineffective channels of communication.13 </p>
+    <p> Changes in standards for clinical trial design made by the U.S. Food and Drug Administration (FDA) during the past two decades have made antibiotic clinical trials particularly challenging.3 Studies comparing antibiotics with placebo are considered to be unethical; therefore, trials are designed to demonstrate noninferiority of new agents compared to existing drugs, within a varying statistical margin.3 This requires a large sample population and consequently high costs, making the development of antibiotics uneconomical and unattractive.3,13 While small companies have stepped in to fill the gap in antibiotic discovery and development formerly occupied by large pharmaceutical companies, the complexity and high cost of phase 3 clinical trials can exceed the financial means of these companies.13 However, in December 2014, Merck acquired the small antibiotic research company Cubist Pharmaceuticals, which is expected to accelerate the study and regulatory approval of new antibiotic agents in the future.19  </p>
+    <p>  Additional new regulatory approaches are needed to ensure the continued development and availability of antibiotic medications.2 The IDSA has proposed a new, limited-population antibiotic drug (LPAD) regulatory approval pathway that has drawn positive public comments from FDA officials.14 This model would enable substantially smaller, less-expensive, and faster clinical trials.14 In return for regulatory approval based on smaller clinical trials, the antibiotic would receive a very narrow indication focused only on the high-risk patients for whom benefits were shown to outweigh risks.14 Such limited approvals already exist in other situations, such as orphan drugs for the treatment of rare diseases.2,13 </p>
+
+    <h4>ANTIBIOTIC-RESISTANT BACTERIAL INFECTIONS</h4>
+    <p>  Antibiotic-resistant infections are already widespread in the U.S. and across the globe.1 A 2011 national survey of infectious-disease specialists, conducted by the IDSA Emerging Infections Network, found that more than 60% of participants had seen a pan-resistant, untreatable bacterial infection within the prior year.7 Many public health organizations have described the rapid emergence of resistant bacteria as a “crisis” or “nightmare scenario” that could have “catastrophic consequences.”8 The CDC declared in 2013 that the human race is now in the “post-antibiotic era,” and in 2014, the World Health Organization (WHO) warned that the antibiotic resistance crisis is becoming dire.15 MDR bacteria have been declared a substantial threat to U.S. public health and national security by the IDSA and the Institute of Medicine, as well as the federal Interagency Task Force on Antimicrobial Resistance.1 </p>
+    <p> The CDC assessed antibiotic-resistant bacterial infections according to seven factors: clinical impact, economic impact, incidence, 10-year projection of incidence, transmissibility, availability of effective antibiotics, and barriers to prevention.5 The threat level of each bacteria was then classified as “urgent,” “serious,” or “concerning” (Table 1).16 In general, threats that are urgent or serious require more monitoring and prevention activities, whereas those considered concerning require less.5 A summary of information regarding the resistant bacteria mentioned above follows. Information regarding other strains of resistant bacteria that have been identified as threats by the CDC can be found at <a href="http://www.cdc.gov/drugresistance/threat-report-2013/pdf/ar-threats-2013-508.pdf.5"></a>   </p>
+
+    <h4>CONCLUSION</h4>
+    <p>Rapidly emerging resistant bacteria threaten the extraordinary health benefits that have been achieved with antibiotics.14 This crisis is global, reflecting the worldwide overuse of these drugs and the lack of development of new antibiotic agents by pharmaceutical companies to address the challenge.14 Antibiotic-resistant infections place a substantial health and economic burden on the U.S. health care system and population.1 Coordinated efforts to implement new policies, renew research efforts, and pursue steps to manage the crisis are greatly needed.2,7 Progress in these areas, as well as new agents to treat bacterial infections, will be discussed in Part 2 of this article.</p>
+  </div>
+
+
+
+  <button class="accordion">Common painkillers linked to increased heart failure risk</button>
+  <div class="panel">
+    <p>(NaturalNews) When elderly patients with joint problems start taking common painkillers such as ibuprofen and naproxen, their risk of heart failure increases. This is the finding of a UK study published in the British Medical Journal. The study investigated 10 million people with an average age of 77 from the UK, the Netherlands, Italy and Germany. Those who took non-steroidal anti-inflammatory drugs (NSAIDs) were rushed to the hospital with heart failure 19 percent more often than those who did not take the drugs. The same awful correlation was not made for those under the age of 65, but the study does point out that serious health problems are being ignored and numbed by painkillers.</p>
+    <h2>Dealing with the root cause of inflammation is more important for long-term health</h2>
+    <p>Regular use of NSAIDs is becoming a popular strategy to help manage pain later in life. Using these over-the-counter painkillers may take the edge off the pain, but continued use does not deal with the problems that are causing the inflammation in the first place. And old age is not the reason for the pain.</p>
+    <p>For this reason, elderly patients could benefit more from natural anti-inflammatory substances that work with the body's healing process. Over time, giving the body phyto-nutrients such as astaxanthin, curcumin and capsicum do much greater damage repair than NSAIDs. These plant based medicines go after the free radicals that are causing damage at the cellular level.</p>
+    <p>Numbing the pain is not enough, and allows heart conditions to go unnoticed, leading to heart failure. Pain within the joints and tissues is a signal to the conscious self that there is indeed a breakdown, an imbalance, or a deficiency. When NSAIDs are thrown at the problem regularly, there can only be a numbing of the real problems that the elderly patient faces. When the correct nutrients are absorbed and toxins are removed, then the root problem sending the message of pain can be repaired.</p>
+
+    <h2>Better pain management essential for the elderly</h2>
+    <p>Flu shots and other vaccines containing aluminum are pushed on the elderly as "medicine." The aluminum acts as an inflammatory adjuvant to trigger the immune system to respond to the virus material in the vaccine. The inflammation and genetic damage that aluminum is known to cause may be exacerbating pain in elderly patients and causing damage to their nervous systems.</p>
+    <p>Natural substances that repair the nervous and immune systems would be better advised for the elderly population. However, the medical system and the common patient do not understand how to use substances such as phenolic compounds that come from plants. These real life medicines possess antioxidant properties that act as therapeutic agents to counteract oxidative stress. Something as simple as Siberian ginseng (Eleutherococcus senticosus) can be included in the diet to provide greater mental and physical stamina. This root contains a powerful combination of sterols, coumarins, flavonoids and polysaccharides that lessen the effect of stress on the body, allowing one to adapt to high stress situations and manage pain more effectively.</p>
+  </div>
+
+  <button class="accordion">Prescription painkillers kill far more people than heroin and cocaine</button>
+  <div class="panel">
+    <p>(NaturalNews) A leading pathologist is warning that one prescription painkiller is causing more deaths than cocaine and heroin.</p>
+    <p>The expert, Prof. Jack Crane – Northern Ireland's top pathologist – says Tramadol is currently "claiming more lives than any other drug," and as such ought to be upgraded to the Class A category. Currently, the drug is listed as a Class C medication in the UK; Class C medications are deemed to be the least harmful.
+    </p>
+    <p>When taken with other medications or mixed with alcohol, Crane said, the combination can be deadly. The drug is taken by thousands of people every day, the UK's Daily Mail reported.</p>
+    <p>Tramadol is used to treat both moderate and severe pain. Its last reclassification in 2014 made it illegal to use without a prescription. <br>
+
+    Others claim that the drug is safe if taken appropriately, but Crane still thinks it should be more tightly regulated. "I don't think that people realise how potentially risky taking Tramadol is," he told ITV News. "I think it's because it's a prescription drug – people assume it's safe."</p>
+    <h2>Britain's deadliest drug</h2>
+    <p>Activists working to get the drug more tightly regulated, say that they believe a rising number of users are trying to get the drug via the black market. Crane says he believes more people will die unless there is a concerted effort by police and government agencies to crack down on illegal sales of Tramadol.</p>
+    <p>His warning comes on the heels of a report calling for the legalization of cannabis in the UK for medicinal use, the Daily Mail said. The controversial report, which was written by a cross-section of lawmakers and peers from various parties and interest groups, says that the British government should allow people with chronic illnesses to grow their own cannabis under license.</p>
+    <p>The All-Party Parliamentary Group for Drug Policy Reform said it would also like to see companies given permission to import or grow marijuana, as well as having lawmakers cut down legal controls and make it less regulated that most other painkillers.</p>
+    <p>A separate report in West Briton also quotes Crane, who called Tramadol the UK's deadliest drug. The report said that in 2014, 240 deaths in Britain were linked to Tramadol.</p>
+    <p>Currently in the U.S. there is an opioid epidemic, and it, too, is a killer. But, as we reported in September, U.S. healthcare makes it easier for opioid-addicted patients to get more medications at hospitals.</p>
+    <p>A report by the Substance Abuse and Mental Health Services Administration found that 1-in-20 Americans abused prescription painkillers at some point in 2015. The agency found that some 119 million Americans aged 12 and older were on prescription psychotherapeutic medications – a term used in the report in reference to "pain relievers, tranquilizers, stimulants, and sedatives" – in 2015. The report noted further that painkillers were, by far, the most prescribed and abused.</p>
+
+    <h2>Obamacare partly to blame for epidemic?</h2>
+    <p>To produce the report, SAMHSA researchers employed an estimate derived from about 68,000 surveys. According to findings, "All estimates (e.g. percentages and numbers) presented in the report are derived from NSDUH [National Survey on Drug Use and Health] survey data." SAMHSA also noted that the use of such medications over the past year was "fairly common" in the United States, with 44.5 percent of the population claiming to have used them at some point during 2015.</p>
+
+    <p>And while most of those who abused opioids and other psychotherapeutic drugs got them from family and friends, the second-most common method for obtaining them was via a primary care provider – either as a prescription or by stealing them from doctor's offices.</p>
+
+    <p>Still others blame Obamacare. Under that law, the Centers for Medicare and Medicaid Services allocates $1.5 billion in Medicare payments as a reward to hospitals based on patient satisfaction surveys. Some questions on survey forms include: "During this hospital stay, how often did the hospital staff do everything they could to help you with your pain?" and, "How often was your pain well controlled?"</p>
+    <p>So, patient satisfaction surveys, in essence, leave administrators with the choice between costing hospitals reimbursement dollars or fueling the opioid epidemic.</p>
+
+  </div>
+
+  <button class="accordion">Big Pharma prescriptions including painkillers, antidepressants plummeting as seniors turn to medical cannabis</button>
+  <div class="panel">
+    <p>(NaturalNews) Use of many prescription drugs has plummeted following the legalization of medical marijuana, according to a study conducted by researchers from the University of Georgia and published in the journal Health Affairs.<br><br>
+
+    The researchers found that Medicare prescriptions fell for conditions that can be treated by cannabis, including anxiety, depression, pain, nausea, psychosis, seizures, sleep disorders and spasticity. Prescriptions for other types of drugs, such as blood-thinners, remained unchanged. This led the researchers to conclude that legalization led directly to the changing prescription habits.<br><br>
+
+    The drop in prescriptions led to a measurable decrease in Medicare spending in those states.</p>
+
+    <h2>Limits Big Pharma price gouging</h2>
+    <p>The researchers found that medical marijuana reduced Medicare costs by $165 million in 2013. If medical marijuana had been legal and available nationwide, the savings would have been about $470 million.<br><br>
+
+"We wouldn't say that saving money is the reason to adopt this. But it should be part of the discussion," said study co-author W. David Bradford.<br><br>
+
+The researchers are also analyzing the effects of medical marijuana legalization on prescriptions paid by Medicaid, the federal-state insurance program for low-income people. Preliminary data from that study show an even larger drop in pharmaceutical prescription costs.<Br><br>
+
+Much of the savings might come simply from the fact that insurance does not cover medical marijuana, which can cost a patient as much as $400 per month out of pocket.<br><br>
+
+"I have some trouble with the idea that this is a source of savings," said Deepak D'Souza of Yale University, who has research medical marijuana but was not involved in the current study.<br><br>
+
+But Bradford believes that marijuana legalization does lower overall health spending, because marijuana is so much cheaper than many of the pharmaceuticals it displaces. This analysis is supported by Harvard Medical School emeritus professor Lester Grinspoon, who has written two books on the topic (but was not associated with the new study).<br><br>
+
+"There's a limit to how high a price cannabis can be sold at as a medicine," Grinspoon said.<br><br>
+</p>
+<h2>Will DEA finally admit benefits of cannabis?</h2>
+
+    <p>he lure of lowered health care spending may play an important role in an ongoing review by the Drug Enforcement Administration (DEA), which is considering reclassifying marijuana from Schedule I substance to a Schedule II.<br><br>
+
+A Schedule I drug is classified as having no medical benefits, and therefore doctors are prohibited from prescribing it and insurance will not cover it. Even in the 25 states (plus Washington, D.C.) where medical marijuana is legal, doctors can only write a referral to a dispensary.<br><br>
+
+Schedule II drugs (like narcotic painkillers) are permitted for medical uses. If marijuana were moved to this classification, insurance companies would be more likely to cover it.<br><br>
+
+The recent study suggests other major benefits that the DEA would also do well to consider. For example, many of the drugs replaced by medical marijuana use have dangerous side effects that are not a concern with cannabis. Perhaps foremost among these are opioid painkillers, which are relatively easy to lethally overdose on.<br><br>
+
+"That doesn't happen with marijuana," D'Souza said.<br><br>
+
+While marijuana can carry its own risks, increasing legalization would make it easier for scientists to carry out research that could guide responsible use.<br><br>
+
+But on a fundamental level, medical marijuana may simply challenge the medical-scientific model of health care by placing key decisions -- and even production of the medicine in the hands of the patient.<br><br>
+
+"As physicians, we are used to prescribing a dose," D'Souza said.<br><br>
+
+"Do you say, 'Take two hits and call me in the morning?' I have no idea."<br><br>
+
+With natural medicine booming, hopefully more people will wake up to the fact that natural medicines, and foods, are in many ways superior to their lab-engineered alternatives. The health-supporting effects of fresh fruits, vegetables and all-natural superfoods simply cannot be beat.<br><br>
+</p>
+  </div>
+
+  <button class="accordion">It's true: Prescription painkillers are far more dangerous than owning a gun... Do you have meds in your house?</button>
+  <div class="panel">
+    <p>(NaturalNews) A good portion of Americans have been frightened into believing that having a gun in the home is a dangerous liability, but the truth is that you are far more likely to die if you have prescription opioids in your medicine cabinet than if you own a firearm.<br><br>
+
+Americans consume more prescription painkillers than anyone else; in fact, 80 percent of all prescription painkillers are sold in the United States, even though we account for only 5 percent of the world's population.<br><br>
+
+Approximately 4.7 million Americans are addicted to prescription painkillers – a number that has increased around 300 percent since 1999. Opioid painkiller overdoses killed 28,000 people in 2014.</p>
+  <h2>Gun death numbers dropping, overdose deaths on the rise</h2>
+  <p>
+    The mainstream media pays far more attention to gun violence than to the opioid epidemic, but the fact is that death by firearm rates have been steadily dropping as painkiller overdose rates continue to rise.<br><br>
+
+    In an article posted on SingleDudeTravel.com, gun rights journalist Duane Norman compared the statistical likelihood of dying from a gun or from prescription painkillers in the home.<br><br>
+
+    Admittedly, these statistics are a little tricky to calculate, but Norman gives the benefit of the doubt to the anti-gun position when he crunches the numbers:<br><br>
+
+    "One of the most beat to death gun control arguments is 'Your odds of dying go WAY higher if you have a gun in the home! No one should own guns, guns are deadly!'<br><br>
+
+    "Now replace the word 'gun' with 'opioid-based painkillers' – yes, I mean the Percocets, Vicodins, Oxycontins, and all the others. Now your argument is somewhere between 5 and 107 times as pertinent, depending on the classification of suicide, and addiction/accessibility.<br><br>
+
+    "Most people who use these arguments are simply regurgitating what they hear second-hand and/or are spoonfed by the mainstream media or whatever progressive outlet they choose to read. The truth is, they are largely ignoring or do not know about the danger of painkillers and other drugs in the home."<br><br>
+
+    Norman's calculations estimate the number of U.S. households in which opioid painkillers are present at roughly 29 million, which translates to a "household opioid-based prescription death rate of 65 per 100,000."<br><br>
+
+    That's a conservative estimate, according to Norman:<br><br>
+
+    "And that assumes the high number of 29 million people with access. Also, suicides need to be broken out of both opioids and gun deaths – you can kill yourself any way you choose, and neither guns nor opioid-based painkillers are a prerequisite to do so. The CDC cites that 77% of poisoning deaths are unintentional accidents, 13% are suicide, and 9% are of 'undetermined intent.' To give the benefit of the doubt, we'll say just one third of the deaths of 'undetermined intent' are indeed accidental, and go with an even 80% being accidental. That figure gives you 15,114 of last year's opioid-based prescription deaths as accidental overdoses or homicide, or a rate of 52 per 100,000 within households with opioid-based painkillers in the medicine cabinet."<br><br>
+  </p>
+
+    <h2>Opioids are at least seven times more likely to kill you than bullets
+    </h2>
+
+    <p>
+      Norman also gives the benefit of the doubt to the anti-gun side of the argument when arriving at household gun death figures, but even so, the rates are still much lower:<br><br>
+
+      "If you use a low estimate of 25% of gun victims not having a gun in the house, now you have a death rate of 7.5 per 100,000 for households with one or more guns. This is all using gun the highly questionable ownership and fatality rates from the progressive media, of course."<br><br>
+
+      In other words, even if one skews the estimates in favor of anti-gun stance, the figures suggest that one is roughly seven times more likely to die from opioid painkillers in the home than from a gun in the home.<br><br>
+
+      If progressives are so concerned about Americans' safety, why are they trying to limit our access to firearms while allowing easy access to dangerous and addictive drugs that are far more likely to kill?<br><br>
+    </p>
+  </div>
+
+  <button class="accordion">The Epidemic of Antibiotic-Resistant Infections: A Call to Action for the Medical Community from the Infectious Diseases Society of America </button>
+  <div class="panel">
+    
+    <p>We are in the midst of an emerging crisis of antibiotic resistance for microbial pathogens in the United States and throughout the world [1–4]. Epidemic antibiotic resistance has been described in numerous pathogens in varying contexts, including—but not limited to—a global pandemic of methicillin-resistant Staphylococcus aureus (MRSA) infection [5–12]; the global spread of drug resistance among common respiratory pathogens, including Streptococcus pneumoniae [13–19] and Mycobacterium tuberculosis [20–29]; and epidemic increases in multidrug-resistant (and, increasingly, truly pan-resistant) gram-negative bacilli [30–39]. Infections caused by these and other antibiotic-resistant microbes impact clinicians practicing in every field of medicine. Given their breadth of effect and significant impact on morbidity and mortality, multidrug-resistant microbes are considered a substantial threat to US public health and national security by the National Academy of Science's Institute of Medicine [40], the federal Interagency Task Force on Antimicrobial Resistance (Interagency Task Force) [41], and the Infectious Diseases Society of America (IDSA) [4].<br><br>
+
+At the very moment when increasing antimicrobial resistance has created a critical need to strengthen society's response, especially through the development of new antibiotics with novel mechanisms of action, pharmaceutical companies have been abandoning the development of anti-infectives [42–44]. In response to the overall threat, the Interagency Task Force released an “Action Plan to Combat Antimicrobial Resistance; Part 1: Domestic” (hereafter referred to as “the Action Plan”) in 2001 [45]. The Action Plan, which was never fully funded, contained 84 action elements, 13 of which were designated as “top priority.” The elements fell into 4 overarching activity areas: surveillance, prevention and control, research, and product development. Unfortunately, since 2001, without any additional, dedicated resources, US federal agencies, including the Centers for Disease Control and Prevention (CDC), the National Institutes of Health, and the US Food and Drug Administration (FDA), have been unable to sufficiently implement the surveillance, prevention and control, and research elements of the Action Plan. Furthermore, despite the fact that it was a top priority in the Action Plan, no additional measures have been proposed by the US government to stimulate research and development (R&D) of new diagnostics, vaccines, or (most critically) antibiotics.<br><br>
+
+In 2004, because of the growing crisis of antibiotic-resistant infection and the continued egress of pharmaceutical companies from antibiotic R&D, the IDSA released a report, “Bad Bugs, No Drugs: As Antibiotic Discovery Stagnates, A Public Health Crisis Brews” [4], to publicize the problem and advise the US government on potential solutions. Unfortunately, to date, the resulting publicity and efforts to stimulate the adoption of solutions to spur new antibiotic discovery have failed. Despite recent, promising developments on Capitol Hill that may lead to better use of previously developed antibiotics, there are no signs that development of novel, priority antibiotics (i.e., those that can treat serious or life-threatening infections that are resistant to current antibiotics) will be stimulated in the coming decade. The purpose of this article is to review the causes of this societal conundrum, to summarize the IDSA's response to date, and to urge immediate, grassroots action by the medical community to attempt to address the deepening antimicrobial resistance crisis and, in particular, the need to significantly revitalize antibiotic R&D.</p><br><br>
+  </div>
+
+  <button class="accordion">When Evidence Says No, but Doctors Say Yes</button>
+  <div class="panel">
+    <p>Long after research contradicts common medical practices, patients continue to demand them and physicians continue to deliver. The result is an epidemic of unnecessary and unhelpful treatments.</p>
+
+    <p>
+      A cardiologist recommended that the man immediately have a coronary angiogram, in which a catheter is threaded into an artery to the heart and injects a dye that then shows up on special x-rays that look for blockages. If the test found a blockage, the cardiologist advised, the executive should get a stent, a metal tube that slips into the artery and forces it open.<br><br>
+
+      While he was waiting in the emergency department, the executive took out his phone and searched “treatment of coronary artery disease.” He immediately found information from medical journals that said medications, like aspirin and blood-pressure-lowering drugs, should be the first line of treatment. The man was an unusually self-possessed patient, so he asked the cardiologist about what he had found. The cardiologist was dismissive and told the man to “do more research.” Unsatisfied, the man declined to have the angiogram and consulted his primary-care doctor.<br><br>
+
+      The primary-care physician suggested a different kind of angiogram, one that did not require a catheter but instead used multiple x-rays to image arteries. That test revealed an artery that was partially blocked by plaque, and though the man’s heart was pumping blood normally, the test was incapable of determining whether the blockage was dangerous. Still, his primary-care doctor, like the cardiologist at the emergency room, suggested that the executive have an angiogram with a catheter, likely followed by a procedure to implant a stent. The man set up an appointment with the cardiologist he was referred to for the catheterization, but when he tried to contact that doctor directly ahead of time, he was told the doctor wouldn’t be available prior to the procedure. And so the executive sought yet another opinion. That’s when he found Dr. David L. Brown, a professor in the cardiovascular division of the Washington University School of Medicine in St. Louis. The executive told Brown that he’d felt pressured by the previous doctors and wanted more information. He was willing to try all manner of noninvasive treatments—from a strict diet to retiring from his stressful job—before having a stent implanted.<br><br>
+    </p>
+    <p>
+      The executive had been very smart to seek more information, and now, by coming to Brown, he was very lucky, too. Brown is part of the RightCare Alliance, a collaboration between health-care professionals and community groups that seeks to counter a trend: increasing medical costs without increasing patient benefits. As Brown put it, RightCare is “bringing medicine back into balance, where everybody gets the treatment they need, and nobody gets the treatment they don’t need.” And the stent procedure was a classic example of the latter. In 2012, Brown had coauthored a paper that examined every randomized clinical trial that compared stent implantation with more conservative forms of treatment, and he found that stents for stable patients prevent zero heart attacks and extend the lives of patients a grand total of not at all. In general, Brown says, “nobody that’s not having a heart attack needs a stent.” (Brown added that stents may improve chest pain in some patients, albeit fleetingly.) Nonetheless, hundreds of thousands of stable patients receive stents annually, and one in 50 will suffer a serious complication or die as a result of the implantation procedure.<br><br>
+
+      Brown explained to the executive that his blockage was one part of a broader, more diffuse condition that would be unaffected by opening a single pipe. The cardiovascular system, it turns out, is more complicated than a kitchen sink. The executive started medication and improved his diet. Three months later, his cholesterol had improved markedly, he had lost 15 pounds, and the chest pain never returned.<br><br>
+    </p>
+    <h2>How can a procedure so contraindicated by research be so common?</h2>
+    <p>Now, listen to the story with the sad ending: Not long after helping the executive, Brown and his colleagues were asked to consult on the case of a 51-year-old man from a tiny Missouri town. This man had successfully recovered from Hodgkin’s lymphoma, but radiation and six cycles of chemotherapy had left him with progressive scarring creeping over his lungs. He was suffocating inside his own body. The man was transferred to Barnes Jewish Hospital, where Brown works, for a life-saving lung transplant. But when the man arrived in St. Louis, the lung-transplant team could not operate on him.</p>
+    <p>
+      Four months earlier, the man had been admitted to another hospital because he was having trouble breathing. There, despite the man’s history of lymphoma treatment, which can cause scarring, a cardiologist wondered whether the shortness of breath might be due to a blocked artery. As with the executive, the cardiologist recommended a catheter. Unlike the executive, however, this man, like most patients, agreed to the procedure. It revealed a partial blockage of one coronary artery. So, doctors implanted a stent, even though there was no clear evidence that the blockage was responsible for the man’s shortness of breath—which was, in fact, caused by the lung scarring. Finally, the man was put on standard post-implantation medications to make sure he would not develop a blood clot at the site of the stent. But those medications made surgery potentially lethal, putting the man at an extremely high risk of bleeding to death during the transplant. The operation had to be delayed.<br><br>
+
+      Meanwhile, the man’s lung tissue continued to harden and scar, like molten lava that cools and hardens into gray stone. Until one day, he couldn’t suck in another breath. The man had survived advanced-stage lymphoma only to die in the hospital, waiting until he could go off needed medication for an unneeded stent.<br><br>
+
+      WWhat the patients in both stories had in common was that neither needed a stent. By dint of an inquiring mind and a smartphone, one escaped with his life intact. The greater concern is: How can a procedure so contraindicated by research be so common?<br><br>
+    </p>
+
+    <p>
+      When you visit a doctor, you probably assume the treatment you receive is backed by evidence from medical research. Surely, the drug you’re prescribed or the surgery you’ll undergo wouldn’t be so common if it didn’t work, right?<br><br>
+
+
+      For all the truly wondrous developments of modern medicine—imaging technologies that enable precision surgery, routine organ transplants, care that transforms premature infants into perfectly healthy kids, and remarkable chemotherapy treatments, to name a few—it is distressingly ordinary for patients to get treatments that research has shown are ineffective or even dangerous. Sometimes doctors simply haven’t kept up with the science. Other times doctors know the state of play perfectly well but continue to deliver these treatments because it’s profitable—or even because they’re popular and patients demand them. Some procedures are implemented based on studies that did not prove whether they really worked in the first place. Others were initially supported by evidence but then were contradicted by better evidence, and yet these procedures have remained the standards of care for years, or decades.<br><br>
+
+
+      Even if a drug you take was studied in thousands of people and shown truly to save lives, chances are it won’t do that for you. The good news is, it probably won’t harm you, either. Some of the most widely prescribed medications do little of anything meaningful, good or bad, for most people who take them.<br><br>
+
+    </p>
+
+    <p>
+      In a 2013 study, a dozen doctors from around the country examined all 363 articles published in The New England Journal of Medicine over a decade—2001 through 2010—that tested a current clinical practice, from the use of antibiotics to treat people with persistent Lyme disease symptoms (didn’t help) to the use of specialized sponges for preventing infections in patients having colorectal surgery (caused more infections). Their results, published in the Mayo Clinic Proceedings, found 146 studies that proved or strongly suggested that a current standard practice either had no benefit at all or was inferior to the practice it replaced; 138 articles supported the efficacy of an existing practice, and the remaining 79 were deemed inconclusive. (There was, naturally, plenty of disagreement with the authors’ conclusions.) Some of the contradicted practices possibly affect millions of people daily: Intensive medication to keep blood pressure very low in diabetic patients caused more side effects and was no better at preventing heart attacks or death than more mild treatments that allowed for a somewhat higher blood pressure. <br><br>Other practices challenged by the study are less common—like the use of a genetic test to determine if a popular blood thinner is right for a particular patient—but gaining in popularity despite mounting contrary evidence. Some examples defy intuition: CPR is no more effective with rescue breathing than if chest compressions are used alone; and breast-cancer survivors who are told not to lift weights with swollen limbs actually should lift weights, because it improves their symptoms.
+    </p><br><br>
+  </div>
+
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("activeM");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+
+
+
+ 
+
+
+	<div class="bottom1">
+			<ul class="some"> 
+				<li class="some"><a class="bottom" href="mailto:mlayan147@gmail.com"> Contact us </a></li> 
+			</ul>
+	</div>
+
+</body>
+</html>

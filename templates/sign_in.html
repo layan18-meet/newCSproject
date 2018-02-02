@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/sign.css')}}">
+</head>
+<body>
+
+	<ul class="some">
+  		<li class="some"><a class="some" href="{{url_for('index')}}" >Home</a></li>
+  		<li class="some"><a class="some" href="{{url_for('about')}}">About</a></li>
+  		<li class="some"><a class="some" href="{{url_for('articles')}}">Articles</a></li>
+  		<div class="dropdown">
+    		<button class="dropbtn">Everything You Need To Know </button>
+    		<div class="dropdown-content">
+      			<a href="{{url_for('antibiotics')}}">Antibiotics</a>
+      			<a href="{{url_for('painkillers')}}">Painkillers</a>
+      			<a href="{{url_for('whychng')}}">Why Change?</a>
+    		</div>
+ 		</div> 
+  		<li class="some"><a class="some" href="{{url_for('personal_stories')}}">Personal Stories</a></li>
+  		<li class="some"><a class="some" href="{{url_for('alternatives')}}">Alternatives</a></li>
+  		<li class="some"><a class="some" href="{{url_for('debate')}}">Debate</a></li>
+	</ul>
+
+
+	<div>
+		<h3>Not Logged in Yet?!</h3>
+		<form action= "{{ url_for('index') }}" method="get">
+		  	<div>
+		  		<label for="Username"> Username: </label>
+		  		<div>
+		  			<input type="text" id="Username" placeholder="Enter Username" name="Username">
+		  		</div>
+		  	</div>
+
+		  	<div>
+		  		<label for="Password"> Password: </label>
+		  		<div>          
+		  			<input type="password" id="Password" placeholder="Enter Password" name="Password">
+		  		</div>
+		  	</div>
+
+		  	<button type="submit"> Sign In</button>
+		</form>
+	</div>
+
+
+
+	<div>
+		<div>
+		  	<a href="{{url_for('sign_up')}}" role="button">Sign Up</a>
+		</div>
+	</div>
+
+	    <div class="bottom1">
+	    	
+	    		<ul class="some"> 
+	    			<li><a class="bottom" href="mailto:mlayan147@gmail.com"> Contact us </a></li> 
+	    		</ul>
+	    	
+	    </div>
+</body>
+</html>

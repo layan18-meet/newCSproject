@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Information</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/design.css')}}">
+</head>
+<body>
+  <ul class="some">
+      <li class="some"><a class="some" href="{{url_for('index')}}" >Home</a></li>
+      <li class="some"><a class="some" href="{{url_for('about')}}">About</a></li>
+      <li class="some"><a class="some" href="{{url_for('articles')}}">Articles</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">Everything You Need To Know </button>
+        <div class="dropdown-content">
+            <a href="{{url_for('antibiotics')}}">Antibiotics</a>
+            <a class="active2" href="{{url_for('painkillers')}}">Painkillers</a>
+            <a href="{{url_for('whychng')}}">Why Change?</a>
+        </div>
+    </div> 
+      <li class="some"><a class="some" href="{{url_for('personal_stories')}}">Personal Stories</a></li>
+      <li class="some"><a class="some" href="{{url_for('alternatives')}}">Alternatives</a></li>
+      <li class="some"><a class="some" href="{{url_for('debate')}}">Debate</a></li>
+  </ul>
+
+
+  <div id="mySidenav">
+    <a href="#definition" id="first">Definition</a>
+      <a href="#ad" id="second">Advantages</a>
+      <a href="#risks" id="third">Risks</a>
+      <a href="#sideEffects" id="fourth">Side Effects</a>
+      <a href="#dependance" id="fifth">Painkiller Dependance</a> 
+  </div> 
+
+  <img style="margin-top: 120px;" src="{{url_for('static', filename='painklrs.jpg')}}">
+
+  <h1 style="margin-left: 500px;">Painkillers</h1>
+
+  <div class="info">
+
+    <h2 id="definition"> Definition </h2>
+      <p> 
+        A painkiller or an analgesic is a drug that is used to reduce or remove physical pain.<br>
+
+        Analgesic drugs act in various ways on the peripheral and central nervous systems. They are distinct from anesthetics, which temporarily affect, and in some instances completely eliminate, sensation. Analgesics include paracetamol (known in North America as acetaminophen or simply APAP), the nonsteroidal anti-inflammatory drugs (NSAIDs) such as the salicylates, and opioid drugs such as morphine and oxycodone.<br><br>
+
+        When choosing analgesics, the severity and response to other medication determines the choice of agent; the World Health Organization pain ladder specifies mild analgesics as its first step.<br><br>
+
+        Analgesic choice is also determined by the type of pain: For neuropathic pain, traditional analgesics are less effective, and there is often benefit from classes of drugs that are not normally considered analgesics, such as tricyclic antidepressants and anticonvulsants.
+      </p>
+
+
+
+
+
+    <h2 id="ad"> Advantages </h2>
+      <p>
+        The following are just a few of the many advantages of pain managing medications:
+      </p>
+
+      <ul>
+        <li>Doctors can perform complicated, lifesaving surgery</li>
+        <li>People who have suffered serious injury can function without complete misery</li>
+        <li>Individuals with chronic, pain-causing diseases find significant improvements to their quality of life</li>
+        <li>Conditions like migraine headaches that would have previously debilitated a person can often be relieved</li>
+        <li>Better dental care that would otherwise be too painful to endure can help people maintain strong oral health much later into life</li>
+      </ul>
+
+
+
+
+    <h2 id="risks"> Risks </h2>
+      <p>
+        The most obvious and infamous risk associated with prescription pain medication is that of addiction. Most of the strongest painkillers are opiates, which are in the same drug family as heroin and opium. They give users a short-lasting euphoria or “high” that will be craved by the brain in a way that is much more powerful than rational though. While it is unlikely that a person with no history of substance abuse or addiction will develop an addiction to painkillers if they follow their dosage instructions meticulously and discontinue their use of the drug as soon as they can, it is possible. Some people are born with a biological predisposition toward addiction. <br><br>
+
+        However, this causes everything to relax, from the muscle in the iris (causing pinpoint pupils) to the muscles in the extremities (causing jerky reactions). It also reduces your ability to be able to react quickly and control your movements, so driving is particularly dangerous.<br><br>
+
+        Being caught behind the wheel while on painkillers can lead to a jail sentence of up to a year and loss of driving privileges, depending on the country.
+
+    
+
+
+    <h2 id="sideEffects"> Side Effects </h2>
+
+      <img src="{{url_for('static', filename='pills.gif')}}">
+      <p>
+        As mentioned before, because opiates and their analogs interact at the various opioid receptors in the brain, they have a wide range of side effects. When a painkiller attaches to the opioid receptor, it prevents a chemical known as GABA from being released. This chemical normally controls the release of dopamine, along with a couple of other neurotransmitters, which causes dopamine to flood the brain, creating the high.<br><br>
+
+
+        Symptoms of painkiller addiction include the following: <br>
+        </p>
+
+        <ul>
+          <li>Defensiveness when approached about drug use</li>
+          <li>Panic or intense anxiety if a constant supply of medication is not available</li>
+          <li>Dishonesty with doctors, pharmacists, friends or family about drug use</li>
+          <li>Diminishing pain blocking power (tolerance)</li>
+          <li>Combining pain medications with other drugs or alcohol to intensify the effects</li>
+        </ul>
+      
+      <h4 style="text-align: center;">Long-Term Effects of Painkillers</h4>
+      <p>
+        There is another number of unpleasant side effects associated with painkiller abuse. Mild side effects include nausea, vomiting, and diarrhea, usually caused by the way the drug interacts with opioid receptors along the digestive tract.<br><br>
+
+        You can also expect random muscle spasms that occur as a result of the nerves reacting at random to various stimuli. As the opiate in the body breaks down at the opioid receptor, GABA starts going back into full swing, but this also causes a sudden cessation of dopamine, which causes the random twitches.<br><br>
+
+        The long-term effects also depend on how the drug is taken. Crushing and injecting the tablet into the bloodstream can cause long-term heart damage and other cardiovascular issues, and can increase the likelihood of a heart attack. Even injecting injectable solutions creates track marks that can become infected. Injecting painkillers or any type of drug, especially if done under non-sterile conditions or in association with shared needles elevates one's risk of contracting serious blood-borne illnesses. Such is the case with oxymorphone, or Opana. In 2015, parts of the state of Indiana saw an alarming spike in HIV cases in conjunction with IV Opana abuse.
+
+      </p>
+
+    <h2 id="dependance"> Painkiller Dependance</h2>
+      <p>
+        Long-term addiction is usually preceded by tolerance to the drug, which means you feel as though you need a regular supply of the drug. The reason isn't usually to reduce the effects of pain, however. The reason is because you start to suffer from the effects of withdrawal when treatment is stopped. This manifests itself as pain and flu-like symptoms. It might include headaches, nausea, general soreness, and even random spasms. You may also find that your relationships with others are compromised as a result of the addiction. Generally, the definition of an addiction means you keep having to take the drug despite the negative effects of it.<br><br>
+
+        All of these painkiller withdrawal symptoms usually indicate that you need to attend a rehab program, particularly if you've tried to get off these drugs on your own without success.
+      </p>
+
+      <br><br><br><br><br>
+      <h8> Resources: </h8>
+        <ul style="font size: 12px">
+          <li> <a style="color: grey;" href="https://drugabuse.com/library/the-effects-of-painkiller-use/"> Drug Abuse </a></li>
+          <li> <a style="color: grey;" href="http://www.painkiller-addiction-treatment.com/benefits-and-risks-of-using-painkillers/"> Painkiller Addiction Treatment </a></li>
+        </ul>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bottom1">
+      <ul class="some"> 
+        <li class="some"><a class="bottom" href="mailto:mlayan147@gmail.com"> Contact us </a></li> 
+      </ul>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Antibiotics</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/design.css')}}">
+</head>
+<body>
+	<ul class="some">
+  		<li class="some"><a class="some" href="{{url_for('index')}}" >Home</a></li>
+  		<li class="some"><a class="some" href="{{url_for('about')}}">About</a></li>
+  		<li class="some"><a class="some" href="{{url_for('articles')}}">Articles</a></li>
+  		<div class="dropdown">
+    		<button class="dropbtn">Everything You Need To Know </button>
+    		<div class="dropdown-content">
+      			<a class="active2" href= "{{url_for('antibiotics')}}">Antibiotics</a>
+      			<a href="{{url_for('painkillers')}}">Painkillers</a>
+      			<a href="{{url_for('whychng')}}">Why Change?</a>
+    		</div>
+ 		</div> 
+  		<li class="some"><a class="some" href="{{url_for('personal_stories')}}">Personal Stories</a></li>
+  		<li class="some"><a class="some" href="{{url_for('alternatives')}}">Alternatives</a></li>
+  		<li class="some"><a class="some" href="{{url_for('debate')}}">Debate</a></li>
+	</ul>
+
+	<h1>Antibiotics</h1>
+
+
+	<div id="mySidenav">
+ 		<a href="#definition" id="first">Definition</a>
+    	<a href="#ad" id="second">Advantages</a>
+    	<a href="#risks" id="third">Risks</a>
+    	<a href="#sideEffects" id="fourth">Side Effects</a>
+    	<a href="#balance" id="fifth">Striking a Balance</a> 
+    	<a href="#yourRole" id="sixth">Your Role in Combatting Antibiotic Resistance</a>
+	</div> 
+
+	<div class="info">
+
+		<img style="margin-top: 20px; " src="{{url_for('static', filename='pills2.gif')}}">
+
+		<h2 id="definition"> Definition </h2>
+
+			<p>
+				An antibiotic is a drug used to treat bacterial infections. Antibiotics have no effect on viral infections. Originally, an antibiotic was a substance produced by one microorganism that selectively inhibits the growth of another. Synthetic antibiotics, usually chemically related to natural antibiotics, have since been produced that accomplish comparable tasks. <br>
+				In simpler words: It's a medicine or chemical that can destroy harmful bacteria in the body or limit their growth.
+
+
+			</p>
+
+
+
+		<h2 id="ad"> Advantages </h2>
+			<p>
+				Antibiotics cure diseases by their property of being selectively toxic to the microorganisms. They're used to treat the variety of bacterial diseases. <br><br>
+
+				There are more than 100 types of antibiotics — you’re likely most familiar with penicillins such as amoxicillin, erythromycin, tetracycline, ciproflaxin, and azithromycin, or Z-pack — and each is designed to target certain types of infections. They either kill bacteria or keep them from reproducing.<br><br>
+
+				They can be used broadly by all age groups, they are safe in the pregnancy period too, have enhanced acid stabilities, do not create problems in the tissue and the intracellular penetration. In adition, small quantities of antibiotics are used as the food preservatives. 
+
+
+
+		<h2 id="risks"> Risks </h2>
+			<p>
+				What’s often cast aside is the fact that antibiotics kill good bacteria along with the bad. They also carry the potential of setting off harmful adverse reactions (more on that below). In other words, they’re serious medicine that shouldn’t be taken casually. Yet many people “continue to cling to the notion of ‘why not take something if there’s even a chance that it will make me better?’, when in reality there are big risks, risks that can land you in the hospital. <br><br>
+
+				The risk isn’t just to you, such as when the antibiotic causes side effects. There’s also a risk to society in general when these drugs aren’t prescribed properly, or aren’t taken as prescribed. That’s because over time the harmful bacteria have adapted to the antibiotics currently in circulation, rendering this remedy less effective or, in some cases, useless. Part of that is simply the nature of how bacteria work, but the widespread overuse of these drugs has fast-tracked the consequences.<br><br>
+
+				In the pediatric community alone there is an excess of 11 million prescriptions a year for antibiotics that are likely unnecessary. Studies cited by the CDC show that up to <bold> 50% of all antibiotic prescriptions </bold> written each year only in the US are not needed, or are not prescribed appropriately.
+			</p>
+
+		<h2 id="sideEffects"> Side Effects </h2>
+
+			<img src="{{url_for('static', filename='pills3.gif')}}">
+
+			<p>
+				Frequent and inappropriate use of antibiotics can cause bacteria or other microbes to change so antibiotics don’t work against them. This is called bacterial resistance or antibiotic resistance. Treating these resistant bacteria requires higher doses of medicine or stronger antibiotics. Because of antibiotic overuse, certain bacteria have become resistant to even the most powerful antibiotics available today. <br><br>
+
+				The side effects associated with antibiotics aren’t trivial. They range from merely annoying (mild rashes, minor skin irritations, or a short bout of diarrhea) to potentially life-threatening reactions (anaphylactic shock, for example). <br><br>
+				In between are a host of serious reactions that lead to time missed from work or school; one or more trips to the doctor to treat the new symptoms and find a new way to treat the original infection; or worse, hospitalization and/or long-term debilitating complications. <br><br>
+
+				These side effects include, but aren’t limited to: <br>
+			</p>
+			<ul>
+					  <li>Bad rash</li>
+					  <li>Bad sore throat</li>
+					  <li>Respiratory difficulties</li>
+					  <li>Nausea and vomiting</li>
+					  <li>Diarrhea</li>
+					  <li>Stomach pain</li>
+					  <li>Swelling of joints</li>
+					  <li>Stevens-Johnson Syndrome (a rare skin disorder most associated with sulfonamides such as bactrum)</li>
+					  <li>Retinal detachment</li>
+					  <li>Compromised kidney function (associated with fluoroquinolones such as Cipro, Levaquin and Avelox)</li>
+					  <li>Widespread pain (with symptoms similar to fibromyalgia)</li>
+					  <li>Tendinitis</li>
+					  <li>Heart palpitations</li>
+					  <li>Muscle spasms</li>
+					  <li>Compromised gut health (associated with repeated use of antibiotics prescribed for intestinal, urinary, and systemic infections)</li>
+					</ul>
+
+			<p>
+				This last side effect is of unique concern because of the important role gut bacteria play in one’s overall health. The facts aren’t entirely known, but a growing body of research links beneficial gut-dwelling bacteria to an active metabolism, improved heart health, better stress hormone levels, fewer allergies, and certain immune system responses. <br><br>
+
+				The FDA has put a black-box warning on fluoroquinolones because of the link to tendinitis and the drugs’ ability to block neuromuscular activity. Some types of fluoroquinolones were even pulled from the market by the FDA because of “unjustifiable risks of adverse effects”. <br>
+
+				<h4><bold>The thing to be aware of with side effects is that you don’t know if or how your body will react until it’s too late. I’m not suggesting that antibiotics aren’t necessary AT ALL, but they need to be prescribed and taken wisely. </bold> </h4>
+
+
+
+
+			</p>
+			
+		<h2 id="balance"> Striking a Balance</h2>	
+			<p>
+				Doctors are on the front line of the problem of antibiotic resistance, working with hospitals and colleagues to reinforce or even re-write prescribing guidelines. In particular, there’s a strong movement to reduce the use of antibiotics in emergency rooms, where lack of patient information and history often makes antibiotics the default first-line drug of choice. Says Dr. Ostrowsky, “Research shows that over 50% of ER patients are prescribed inappropriate antibiotics for viral upper respiratory infections,” like the flu. One issue may be that too many people use emergency rooms for routine illnesses. That’s why many healthcare professionals are hopeful that the ongoing roll-out of the Affordable Care Act, which means more Americans will have insurance, will translate into fewer people using ER departments for non-emergency treatment. <br><br>
+
+				And there’s promising, albeit slow-moving, work among chemists to create new antibiotics. (More research funding would greatly help speed up the process, but the economics involved mean there’s less incentive for pharmaceutical companies to bump antibiotic development up on the priority list.) <br>
+
+
+			</p>
+
+		<h2 id="yourRole"> Your Role in Combatting Antibiotic Resistance </h2>	
+			<p>
+				Clearly this is a jigsaw puzzle that requires a group effort to solve. Patients — including you — have a part to play, and evidence is mounting that many people do understand the issue and want to reverse it. “I’m optimistic and enthused that the public is taking notice of antibiotic resistance,” says Dr. Ostrowsky. “It gives me hope.” <br><br>
+
+				Echoing that optimism is Dr. Newland. While top-level changes among hospitals, physicians, researchers and pharmaceutical companies are necessary, there’s lots consumers can do to help reverse the trend, he says. <br><br>
+
+				Take the following points as your new “Do I need antibiotics?” gospel: <br>
+			</p>
+
+			<ol>
+				<li>Remember: <bold>Sniffle, sneeze, no antibiotics</bold>, please. If you have a viral illness, such as the common cold or the flu, accept that there isn’t a drug that will cure it.</li>
+				<li> <bold> Be mindful of how you discuss your symptoms with your doctor. </bold> Physician surveys find that doctors are more likely to prescribe antibiotics when patients use diagnostic language (“I think my son has an ear infection,” “I think I have strep throat”) compared to when they describe their symptoms (“My son’s been grabbing his ears and seems miserable.” “It really hurts when I swallow”). Even if you’re not expecting or hinting around for an antibiotic prescription, your busy doctor may misread your intent and give you one anyway — all in the name of patient satisfaction. </li>
+				<li> <bold> Ask about alternatives.</bold> If your doctor says “Let’s take a wait and see approach,” ask about alternative remedies and be open to trying them. </li>
+				<li> <bold> Don’t go on a hunt for a willing accomplice.</bold> If your doctor sends you home with a recipe for chicken soup instead of a Z-pack, yes, you’ll likely find it fairly easy to find another doctor willing to write that script. But resist that urge for a quick fix — see tip number one. </li>
+				<li> <bold>Ask questions.</bold> If you are handed an antibiotic prescription, don’t leave without having a discussion about: what criteria your symptoms meet to warrant the antibiotic; the possible and common side effects; what you should do if you experience a reaction. Be sure you completely understand the doctor’s dosing instructions.</li>
+			</ol>
+
+
+			<br><br><br><br><br>
+			<h8> Resources: </h8>
+				<ul style="font size: 12px">
+					<li> <a style="color: grey;" href="https://www.medicinenet.com/script/main/art.asp?articlekey=8121"> Medicine Net </a></li>
+					<li> <a style="color: grey;" href="https://dictionary.cambridge.org/dictionary/english/antibiotic"> Cambridge Dictionary </a></li>
+					<li> <a style="color: grey;" href="https://www.online-sciences.com/health/antibiotics-advantages-and-disadvantages/"> Online Siences </a></li>
+					<li> <a style="color: grey;" href="https://medshadow.org/features/pros-cons-of-antibiotics/"> Med Shadow </a></li>
+				</ul>
+
+
+	</div>
+	<div class="bottom1">
+      <ul class="some"> 
+        <li class="some"><a class="bottom" href="mailto:mlayan147@gmail.com"> Contact us </a></li> 
+      </ul>
+  </div>
+</body>
+</html>
