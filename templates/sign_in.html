@@ -13,18 +13,18 @@
 
 	<div>
 		<h3>Not Logged in Yet?!</h3>
-		<form action="/signIn" method="GET">
+		<form action="{{url_for('signIn')}}" method="post">
 		  	<div>
 		  		<label for="Username"> Username: </label>
 		  		<div>
-		  			<input type="text" id="Username" placeholder="Enter Username" name="Username">
+		  			<input type="text" id="Username" placeholder="Enter Username" name="name">
 		  		</div>
 		  	</div>
 
 		  	<div>
 		  		<label for="Password"> Password: </label>
 		  		<div>          
-		  			<input type="password" id="Password" placeholder="Enter Password" name="Password">
+		  			<input type="password" id="Password" placeholder="Enter Password" name="password">
 		  		</div>
 		  	</div>
 
@@ -36,7 +36,7 @@
 
 	<div>
 		<div>
-		  	<a href="{{url_for('sign_up')}}" role="button">Sign Up</a>
+		  	<a href="{{url_for('signUp')}}" role="button">Sign Up</a>
 		</div>
 	</div>
 

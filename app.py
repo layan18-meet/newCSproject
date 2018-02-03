@@ -11,7 +11,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db= SQLAlchemy(app)
 # sess= Session()
 
-class User (db.Model):
+class User(db.Model):
 	id= db.Column(db.Integer, primary_key= True, autoincrement=True)
 	name= db.Column(db.String(80), nullable= False)
 	password= db.Column(db.String(80), nullable= False)
@@ -63,13 +63,13 @@ def alternatives():
 def debate():
 	return render_template("debate.html")
 
-@app.route('/sign_in')
-def sign_in():
-	return render_template("sign_in.html")
+# @app.route('/sign_in')
+# def sign_in():
+# 	return render_template("sign_in.html")
 
-@app.route('/sign_up')
-def sign_up():
-	return render_template("sign_up.html")
+# @app.route('/sign_up')
+# def sign_up():
+# 	return render_template("sign_up.html")
 
 
 @app.route('/signUp', methods=['GET', 'POST'])
@@ -88,12 +88,16 @@ def signUp():
 def signIn():
 	if request.method == "GET":
 		return render_template('sign_in.html')
-	elif request.method == "POST":
-		log_in = User.query.filter_by(user=request.form['name'], password=request.form['password']).first()
-	if log_in == None:
-		return render_template('sign_in.html', log_in=False)
 	else:
-		return render_template('index2.html')
+		print 'postttt signin'
+		user = User.query.filter_by(name=request.form['name'], password=request.form['password']).first()
+		print(user)
+		if user == None:
+			print("no user")
+			return render_template('sign_in.html', log_in=False)
+		else:
+			print("logged in")
+			return render_template('index2.html')
 
 
 @app.route("/logout")
