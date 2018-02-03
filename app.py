@@ -72,6 +72,7 @@ def debate():
 # 	return render_template("sign_up.html")
 
 
+
 @app.route('/signUp', methods=['GET', 'POST'])
 def signUp():
 	if request.method == 'POST':

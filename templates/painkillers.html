@@ -6,20 +6,20 @@
 </head>
 <body>
   <ul class="some">
-      <li class="some"><a class="some" href="{{url_for('index')}}" >Home</a></li>
+      <li class="some"><a class="some" href="{{url_for('index2')}}" >Home</a></li>
       <li class="some"><a class="some" href="{{url_for('about')}}">About</a></li>
       <li class="some"><a class="some" href="{{url_for('articles')}}">Articles</a></li>
       <div class="dropdown">
-        <button class="dropbtn">Everything You Need To Know </button>
+        <button style="border-bottom: 3px solid #9AE37F;" class="dropbtn">Everything You Need To Know </button>
         <div class="dropdown-content">
             <a href="{{url_for('antibiotics')}}">Antibiotics</a>
             <a class="active2" href="{{url_for('painkillers')}}">Painkillers</a>
             <a href="{{url_for('whychng')}}">Why Change?</a>
         </div>
     </div> 
-      <li class="some"><a class="some" href="{{url_for('personal_stories')}}">Personal Stories</a></li>
+     
       <li class="some"><a class="some" href="{{url_for('alternatives')}}">Alternatives</a></li>
-      <li class="some"><a class="some" href="{{url_for('debate')}}">Debate</a></li>
+     
   </ul>
 
 

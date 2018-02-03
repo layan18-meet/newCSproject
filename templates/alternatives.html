@@ -3,10 +3,11 @@
 <head>
 	<title>Alternatives</title>
 	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/design.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/alt.css')}}">
 </head>
 <body>
   <ul class="some">
-      <li class="some"><a class="some" href="{{url_for('index')}}" >Home</a></li>
+      <li class="some"><a class="some" href="{{url_for('index2')}}" >Home</a></li>
       <li class="some"><a class="some" href="{{url_for('about')}}">About</a></li>
       <li class="some"><a class="some" href="{{url_for('articles')}}">Articles</a></li>
       <div class="dropdown">
@@ -16,13 +17,131 @@
             <a href="{{url_for('painkillers')}}">Painkillers</a>
             <a href="{{url_for('whychng')}}">Why Change?</a>
         </div>
-    </div> 
-      <li class="some"><a class="some" href="{{url_for('personal_stories')}}">Personal Stories</a></li>
+      </div> 
       <li class="some"><a class="active" href="{{url_for('alternatives')}}">Alternatives</a></li>
-      <li class="some"><a class="some" href="{{url_for('debate')}}">Debate</a></li>
   </ul>
 
 
+  <!-- MAIN (Center website) -->
+  <div class="main">
+
+  <h1> ALTERNATIVES </h1>
+  <hr>
+
+  <h2> PAINKILLERS ALTERNATIVES </h2>
+  <p style="font-size: 16px;">There are numerous options available to you so that you can explore alternatives to medication in the treatment of your pain. Some of the interventions you might consider include:</p>
+    <ul>
+      <li style="font-size: 14px;">Exercise and nutrition.</li>
+      <li style="font-size: 14px;">Various physical and psychological therapies.</li>
+      <li style="font-size: 14px;">Natural supplements.</li>
+      <li style="font-size: 14px;">Mind-body therapies.</li>
+    </ul>
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+
+    <div class="column">
+      <div class="content">
+        <img src="{{url_for('static', filename='excNnut.jpg')}}" alt="Mountains" style="width:100%">
+        <h3>Exercise and Nutrition</h3>
+        <p>Certain types of physical exercise can help reduce pain and increase functionality by:</p>
+        <ul>
+          <li class="caption">Increasing your range of motion.</li>
+          <li class="caption">Helping to stretch and strengthen your muscles.</li>
+        </ul>
+        <p>Making dietary changes related to the type of pain you experience may help you manage some of your symptoms.</p>
+        <ul>
+          <li class="caption">Eating fresh foods.</li>
+          <li class="caption">Avoiding caffeine.</li>
+          <li class="caption">Following an anti-inflammatory diet.</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="column">
+      <div class="content">
+      <img src="{{url_for('static', filename='phys.jpg')}}" alt="Physical Therapy" style="width:100%">
+        <h3>Physical Therapy</h3>
+        <p><bold>Physical therapy</bold> utilizes trained professionals who will prescribe specific exercises, stretches, and body movements that can help enhance your strength and flexibility and target underlying causes of your pain. Physical therapists can also educate you about body mechanics, such as posture, so that you can make adjustments to relieve pain. An added benefit is that you can take the exercises and stretches home with you so that you can reduce it on your own.</p>
+      </div>
+    </div>
+
+
+    <div class="column">
+      <div class="content">
+      <img src="{{url_for('static', filename='msg.jpg')}}" alt="Massage Therapy" style="width:100%">
+        <h3>Massage Therapy</h3>
+        <p>Massage therapy can be beneficial for your pain by promoting relaxation and reducing muscle tension. There are also specific techniques your therapist might be trained in that can provide more focused treatment such as neuromuscular therapy, trigger-point therapy, or myofascial release. Getting a massage can also contribute to emotional well-being.</p>
+      </div>
+    </div>
+
+
+    <div class="column">
+      <div class="content">
+      <img src="{{url_for('static', filename='omega3.jpg')}}" alt="Natural Supplements" style="width:100%">
+        <h3>Natural Supplements</h3>
+        <p>Omega-3 fatty acids are found in some types of seafood, fish oil, and vegetable oil. Increasing your intake by eating more fatty fish or shellfish, or by taking a dietary supplement, may help relieve your symptoms of pain, particularly if you have rheumatoid arthritis.</p>
+      </div>
+    </div>
+
+  </div>
+    <!-- END GRID -->
+
+  <!-- Portfolio Gallery Grid -->
+
+<div class="row">
+
+  <div class="column">
+    <div class="content">
+    <img src="{{url_for('static', filename='yoga.jpg')}}" alt="Yoga" style="width:100%">
+      <h3>Yoga</h3>
+      <p>Yoga involves practicing physical postures (asanas) and breathing exercises that can help you increase your awareness of your body, stretch your muscles, and increase your strength and mobility. This may help reduce and prevent pain as well as improve your functioning. Many people also experience significant improvements in their overall well-being and stress levels, which can also positively impact your physical symptoms. The particular asanas that may be most helpful for you will depend on your type of pain, and it may be important that you avoid certain poses or make appropriate modifications to practice safely and avoid aggravating your condition.</p>
+    </div>
+  </div>
+
+
+  <div class="column">
+   <div class="content">
+     <img src="{{url_for('static', filename='turm.jpg')}}" alt="Other medicine" style="width:100%">
+       <h3>Other pain relievers</h3>
+       <p>Turmeric is a plant of the ginger family that may alleviate some types of pain due to its anti-inflammatory properties. <br>
+       Other pain relievers may also work to help alleviate your symptoms. Over-the-counter anti-inflammatory agents such as ibuprofen or naproxen, and prescription topicals like diclofenac may help acute soft tissue injuries or chronic joint-related conditions if used regularly. Topical lidocaine may help mitigate symptoms of neuropathy. Other pain-relieving gels include Biofreeze and Tiger Balm.</p>
+     </div>
+   </div>
+
+
+
+    <div class="column">
+      <div class="content">
+      <img src="{{url_for('static', filename='gi.jpg')}}" alt="Guided imagery" style="width:100%">
+        <h3>Guided imagery</h3>
+        <p>Guided imagery and other relaxation techniques are often a part of the commonly used cognitive-behavioral therapy. They can help you with your pain as you learn to relax by slowing and deepening your breathing, releasing muscle tension, and visualizing peaceful scenes while recreating the positive emotions they elicit. Here is an example of a short 5-minute relaxation exercise you can practice: <a href="https://theacpa.org/Relaxation-Guide"> </a></p>
+      </div>
+    </div>
+
+
+
+    <div class="column">
+     <div class="content">
+       <img src="{{url_for('static', filename='hyp.jpg')}}" alt="Hypnosis" style="width:100%">
+         <h3>Hypnosis</h3>
+         <p>Hypnosis is often performed by a psychotherapist who has been trained in this technique, but your sessions will also likely instruct you in how to conduct self-hypnosis so that you can utilize this technique at home as well. Learning hypnosis may help you relax, refocus your attention, and change your thoughts and behaviors related to the pain so that you can deal with it more effectively.</p>
+       </div>
+     </div>
+
+</div>
+  <!-- END GRID -->
+  
+
+  <div class="content">
+    <img src="{{url_for('static', filename='free.jpg')}}" alt="Freedom" style="width:100%">
+    <h3>Be Painkiller - Free!</h3>
+    <p>As you can see, there are many avenues you can explore if you desire alternatives to medication in the treatment of your pain. The techniques that eventually work for you are likely going to depend on the type that you experience and how committed you are to practicing them. Ideally, you can work with a variety of professionals as part of an integrative medicine program that will help you address your pain from a variety of different angles so that you can have the best possible outcome. Whatever path you pursue, just remember that there are numerous resources out there and you don’t have to try and manage your pain alone.</p>
+  </div>
+
+  <!-- END MAIN -->
+  </div>
 
 
 
